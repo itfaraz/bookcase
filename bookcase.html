@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie6"><![endif]-->
+<!--[if IE 7 ]>
+<html class="ie7"><![endif]-->
+<!--[if IE 8 ]>
+<html class="ie8"><![endif]-->
+<!--[if IE 9 ]>
+<html class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html>
+<!--<![endif]-->
+<!--STATUS OK-->
+
+<head>
+    <title>کاتالوگ فراز</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <script type="text/javascript" language="javascript" src="https://cdn.jsdelivr.net/npm/jquery-1.10.2@1.10.2/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.jsdelivr.net/npm/jquery-qrcode@1.0.0/jquery.qrcode.min.js"></script>
+
+    <script type="text/javascript" language="javascript" src="js/BookcaseUtils.min.js"></script>
+
+    <script type="text/javascript" language="javascript" src="js/hammer.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/Bookcase.min.js"></script>
+    <link rel="stylesheet" href="css/bookcase.min.css" />
+</head>
+
+<body>
+
+    <div class="main-container"></div>
+</body>
+<script type="text/javascript">
+    (function($) {
+        $(function() {
+
+            var options = {
+
+                uLink: "pguq",
+
+                caseLink: "https://anyflip.com/bookcase/pguq/",
+                domain: "",
+                baseUrl: "https://anyflip.com/",
+                title: "مبتکران پردازش فراز",
+                openType: "1",
+                infoShow: "2",
+                skin: "yellow",
+                isShowShare: "0",
+                isShowContact: "0",
+                isShowSearch: "1",
+                isShowSkin: "0",
+                isShowCategory: "1",
+                bMode: "3",
+                openWindow: "0",
+                isShowLogo: "1",
+                bookData: [{
+                    "id": 171462,
+                    "title": "Your health now",
+                    "description": "Your health now",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/dbek\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/dbek\/files\/shot.jpg",
+                    "pages": 21,
+                    "newTime": "2016-08-24 00:05:39",
+                    "isNew": 2,
+                    "categoryid": 15,
+
+                    "bLink": "dbek",
+                    "label": 1
+                }, {
+                    "id": 127,
+                    "title": "The new look for style home",
+                    "description": "The new look for style home",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/mtzr\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/mtzr\/files\/shot.jpg",
+                    "pages": 8,
+                    "newTime": "2015-01-26 03:48:07",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "mtzr",
+                    "label": 0
+                }, {
+                    "id": 87,
+                    "title": "Yoga+Magazine+-+June+2014",
+                    "description": "Yoga+Magazine+-+June+2014",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/ybco\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/ybco\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-22 01:45:29",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "ybco",
+                    "label": 0
+                }, {
+                    "id": 86,
+                    "title": "Yoga+Cures+Simple+Routines+to+Conquer+Ml...",
+                    "description": "Yoga+Cures+Simple+Routines+to+Conquer+Ml...",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/jbzk\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/jbzk\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-22 01:30:31",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "jbzk",
+                    "label": 2
+                }, {
+                    "id": 43,
+                    "title": "Yoga+Journal+USA+-+November+2013",
+                    "description": "Yoga+Journal+USA+-+November+2013",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/jlci\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/jlci\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 06:48:54",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "jlci",
+                    "label": 3
+                }, {
+                    "id": 41,
+                    "title": "Yoga+Journal+USA+-+June+2014",
+                    "description": "Yoga+Journal+USA+-+June+2014",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/iruy\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/iruy\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 06:38:18",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "iruy",
+                    "label": 0
+                }, {
+                    "id": 40,
+                    "title": "Yoga+Journal+USA+-+March+2013",
+                    "description": "Yoga+Journal+USA+-+March+2013",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/xahr\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/xahr\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 06:23:07",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "xahr",
+                    "label": 0
+                }, {
+                    "id": 39,
+                    "title": "Yoga+The+Complete+Manual+2014",
+                    "description": "Yoga+The+Complete+Manual+2014",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/mmxw\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/mmxw\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 06:22:47",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "mmxw",
+                    "label": 0
+                }, {
+                    "id": 38,
+                    "title": "Yoga+Journal+USA-+June+2013",
+                    "description": "Yoga+Journal+USA-+June+2013",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/lztp\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/lztp\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 06:22:45",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "lztp",
+                    "label": 0
+                }, {
+                    "id": 36,
+                    "title": "Yoga+Journal+USA+-+October+2013",
+                    "description": "Yoga+Journal+USA+-+October+2013",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/fihv\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/fihv\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 06:22:34",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "fihv",
+                    "label": 0
+                }, {
+                    "id": 35,
+                    "title": "Yoga+Journal+USA+-+Yoga+Essentials+2014",
+                    "description": "Yoga+Journal+USA+-+Yoga+Essentials+2014",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/gehm\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/gehm\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 06:22:34",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "gehm",
+                    "label": 0
+                }, {
+                    "id": 34,
+                    "title": "Yoga+Magazine+-+May+2014",
+                    "description": "Yoga+Magazine+-+May+2014",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/cahn\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/cahn\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 06:22:33",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "cahn",
+                    "label": 0
+                }, {
+                    "id": 33,
+                    "title": "Yoga+Journal+USA+-+July-August+2014",
+                    "description": "Yoga+Journal+USA+-+July-August+2014",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/ilmi\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/ilmi\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 06:09:58",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "ilmi",
+                    "label": 0
+                }, {
+                    "id": 32,
+                    "title": "Yoga+Journal+USA+\u2013+January-February+201...",
+                    "description": "Yoga+Journal+USA+\u2013+January-February+201...",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/chji\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/chji\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 06:09:24",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "chji",
+                    "label": 0
+                }, {
+                    "id": 31,
+                    "title": "Yoga+Journal+USA+-+January-February+2014",
+                    "description": "Yoga+Journal+USA+-+January-February+2014",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/diak\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/diak\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 06:08:46",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "diak",
+                    "label": 0
+                }, {
+                    "id": 30,
+                    "title": "Yoga+Journal+USA+-+April-May+2014",
+                    "description": "Yoga+Journal+USA+-+April-May+2014",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/tzfu\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/tzfu\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 05:49:02",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "tzfu",
+                    "label": 0
+                }, {
+                    "id": 29,
+                    "title": "Yoga+Journal+USA+-+December+2013",
+                    "description": "Yoga+Journal+USA+-+December+2013",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/hvxc\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/hvxc\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 05:48:51",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "hvxc",
+                    "label": 0
+                }, {
+                    "id": 28,
+                    "title": "Yoga+Journal+Australia+-+November-Decemb...",
+                    "description": "Yoga+Journal+Australia+-+November-Decemb...",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/gtnp\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/gtnp\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 05:09:46",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "gtnp",
+                    "label": 0
+                }, {
+                    "id": 27,
+                    "title": "Yoga+Journal+Australia+\u2013+April+2014",
+                    "description": "Yoga+Journal+Australia+\u2013+April+2014",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/xsyl\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/xsyl\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 05:05:28",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "xsyl",
+                    "label": 0
+                }, {
+                    "id": 25,
+                    "title": "DEssential.Yoga.An...",
+                    "description": "DEssential.Yoga.An...",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/pxiz\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/pxiz\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 04:27:34",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "pxiz",
+                    "label": 0
+                }, {
+                    "id": 24,
+                    "title": "LA+Yoga+-+April+2014",
+                    "description": "LA+Yoga+-+April+2014",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/vvvx\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/vvvx\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 04:15:41",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "vvvx",
+                    "label": 0
+                }, {
+                    "id": 23,
+                    "title": "LA+Yoga+-+September+2012",
+                    "description": "LA+Yoga+-+September+2012",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/cinq\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/cinq\/files\/shot.jpg",
+                    "pages": 41,
+                    "newTime": "2015-01-19 04:07:30",
+                    "isNew": 1,
+                    "categoryid": 15,
+                    "categoryname": "Default",
+                    "bLink": "cinq",
+                    "label": 0
+                }, {
+                    "id": 22,
+                    "title": "کاتالوگ صنعتی",
+                    "description": "B.K.S.+Iyengar+Yoga+-+The+Path+to+Holist...",
+                    "url": "http:\/\/online.anyflip.com\/pguq\/xdsx\/",
+                    "coverimg": "https:\/\/online.anyflip.com\/pguq\/xdsx\/files\/shot.jpg",
+                    "pages": 32,
+                    "newTime": "2015-01-19 03:59:57",
+                    "isNew": 1,
+                    "categoryid": 16,
+                    "categoryname": "جدید",
+                    "bLink": "xdsx",
+                    "label": 0
+                }],
+                folderData: [{
+                    "value": 15,
+                    "label": "Default"
+                }, {
+                    "value": 16,
+                    "label": "جدید"
+                }]
+            };
+
+            new Bookcase($(".main-container"), options);
+            // sta.bookcaseVisit("14");
+
+        });
+    })(window.jQuery);
+</script>
+
+</html>
